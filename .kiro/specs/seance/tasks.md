@@ -11,7 +11,7 @@ non-functional section.
 
 ## Wave 1 — Foundations (no dependencies)
 
-- [ ] **T1. Verify scaffold and install dependencies**
+- [x] **T1. Verify scaffold and install dependencies**
   - Run `npm install`, then `npm run build`, `npm test`, `npm run
     typecheck`, `npm run lint`. Fix any version or config issue the scaffold
     has (peer conflicts, missing types) without changing the stack.

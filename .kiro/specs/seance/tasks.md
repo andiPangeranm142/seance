@@ -27,7 +27,7 @@ non-functional section.
     duplicate slashes, tracking params; PBT covers idempotence, round-trip
     validity, and param preservation (200 runs). (R1.1, R1.2)
 
-- [ ] **T3. Timestamp utilities (`src/lib/time.ts`) + property tests**
+- [x] **T3. Timestamp utilities (`src/lib/time.ts`) + property tests**
   - Implement `parseTimestamp` (strict 14-digit validation, rejects
     impossible dates), `formatTimestamp`, `formatDisplay`.
   - Files: `src/lib/time.ts`, `src/lib/time.test.ts`.

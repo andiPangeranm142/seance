@@ -77,7 +77,7 @@ non-functional section.
 
 ## Wave 3 — UI components (depends on Wave 2)
 
-- [ ] **T8. SummonForm component + tests**
+- [x] **T8. SummonForm component + tests**
   - URL input with label, submit button, inline validation errors, disabled
     state while summoning, staged progress text via props.
   - Files: `src/components/SummonForm.tsx`,

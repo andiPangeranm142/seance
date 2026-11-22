@@ -1,0 +1,140 @@
+/* Séance design tokens — candlelit séance / Ouija board theme.
+   Palette and type scale are defined here; components consume the tokens.
+   Full visual direction lives in .kiro/specs/seance/design.md. */
+
+:root {
+  --bg: #0d0a14;
+  --bg-raised: #171226;
+  --bg-overlay: #1e1733;
+  --ink: #f2ead9;
+  --ink-dim: #c9bfa8;
+  --muted: #a89fc0;
+  --line: #2e2547;
+  --accent: #c084fc;
+  --accent-soft: #a855f7;
+  --candle: #f5b942;
+  --candle-dim: #b97f1f;
+  --danger: #f87171;
+  --success: #4ade80;
+  --radius: 14px;
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(60rem 30rem at 50% -10%, rgb(168 85 247 / 0.16), transparent 60%),
+    var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--candle);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: rgb(245 185 66 / 0.35);
+}
+
+.app-shell {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 3rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 0 2.5rem;
+}
+
+.hero-eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 10vw, 5.5rem);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-shadow: 0 0 42px rgb(245 185 66 / 0.35);
+}
+
+.hero-tagline {
+  margin: 0.75rem 0 0;
+  color: var(--ink-dim);
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-style: italic;
+}
+
+.placeholder-card {
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: 1.75rem 2rem;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.placeholder-card h2 {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.placeholder-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.placeholder-card code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  color: var(--candle);
+}
+
+.app-footer {
+  margin-top: 3rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    padding: 1.5rem 1rem 2.5rem;
+  }
+
+  .placeholder-card {
+    padding: 1.25rem 1.25rem;
+  }
+}

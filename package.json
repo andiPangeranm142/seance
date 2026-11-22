@@ -1,0 +1,39 @@
+{
+  "dependencies": {
+    "@mozilla/readability": "^0.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "description": "Raise dead links: resurrect dead web pages from the Wayback Machine. Kiroween 2026, category Resurrection.",
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "eslint": "^9.28.0",
+    "fast-check": "^4.3.0",
+    "globals": "^16.2.0",
+    "jsdom": "^26.1.0",
+    "typescript": "~5.9.2",
+    "typescript-eslint": "^8.34.0",
+    "vite": "^7.0.0",
+    "vitest": "^3.2.4",
+    "wrangler": "^4.20.0"
+  },
+  "name": "seance",
+  "private": true,
+  "scripts": {
+    "build": "tsc -b && vite build",
+    "dev": "vite",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "worker:deploy": "wrangler deploy",
+    "worker:dev": "wrangler dev"
+  },
+  "type": "module",
+  "version": "0.1.0"
+}

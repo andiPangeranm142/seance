@@ -1,0 +1,15 @@
+{
+  "hooks": [
+    {
+      "action": {
+        "command": "npm test",
+        "type": "command"
+      },
+      "description": "Run the full Vitest suite (unit + property-based) after Kiro finishes a spec task, so regressions are caught before the next task starts.",
+      "name": "Test after spec task",
+      "timeout": 300,
+      "trigger": "PostTaskExecution"
+    }
+  ],
+  "version": "v1"
+}

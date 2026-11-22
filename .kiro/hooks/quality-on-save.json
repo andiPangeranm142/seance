@@ -1,0 +1,27 @@
+{
+  "hooks": [
+    {
+      "action": {
+        "command": "npx tsc --noEmit",
+        "type": "command"
+      },
+      "description": "Type-check the project whenever the agent saves a TypeScript file, so type errors surface immediately instead of at build time.",
+      "matcher": "\\.(ts|tsx)$",
+      "name": "Typecheck on save",
+      "timeout": 120,
+      "trigger": "PostFileSave"
+    },
+    {
+      "action": {
+        "command": "npx eslint --fix",
+        "type": "command"
+      },
+      "description": "Lint and auto-fix TypeScript files whenever the agent saves one.",
+      "matcher": "\\.(ts|tsx)$",
+      "name": "Lint on save",
+      "timeout": 120,
+      "trigger": "PostFileSave"
+    }
+  ],
+  "version": "v1"
+}

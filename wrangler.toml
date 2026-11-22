@@ -1,0 +1,7 @@
+name = "seance-wayback-proxy"
+main = "worker/proxy.ts"
+compatibility_date = "2026-11-22"
+
+# Free-tier Cloudflare Worker. No bindings, no secrets, no KV.
+# Deploy with: npm run worker:deploy
+# Then set VITE_WAYBACK_PROXY_URL to the deployed workers.dev URL.

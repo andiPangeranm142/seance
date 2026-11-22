@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+*.tsbuildinfo
+
+# Environment (never commit secrets)
+.env
+.env.*
+!.env.example
+
+# Cloudflare
+.wrangler/
+
+# Test artifacts
+coverage/
+
+# OS / editor
+.DS_Store
+*.log
+
+# IMPORTANT: .kiro is intentionally NOT ignored.
+# Kiroween rules require the /.kiro directory at the repo root
+# (specs, hooks, steering) to demonstrate Kiro usage.
+# Do NOT add .kiro or any sub-folder to this file.

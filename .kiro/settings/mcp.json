@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "fetch": {
+      "args": [
+        "mcp-server-fetch"
+      ],
+      "autoApprove": [
+        "fetch"
+      ],
+      "command": "uvx",
+      "timeout": 30000
+    },
+    "wayback": {
+      "args": [
+        "tools/mcp-wayback/server.mjs"
+      ],
+      "autoApprove": [
+        "*"
+      ],
+      "command": "node",
+      "disabled": true,
+      "timeout": 30000
+    }
+  }
+}

@@ -66,7 +66,7 @@ non-functional section.
     blocks; no `<script>` survives; relative image URLs are rewritten to
     `web.archive.org/web/<ts>im_/…`. (R3.1–R3.4)
 
-- [ ] **T7. Export builders (`src/lib/export.ts`) + tests**
+- [x] **T7. Export builders (`src/lib/export.ts`) + tests**
   - Implement `toMarkdown`, `toStandaloneHtml`, and `download`. Markdown
     includes title, original URL, snapshot timestamp, and content. HTML is
     standalone (inline CSS, no scripts).

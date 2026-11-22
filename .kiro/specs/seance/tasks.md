@@ -18,7 +18,7 @@ non-functional section.
   - Files: `package.json`, configs (only if a fix is needed).
   - Acceptance: all four commands pass on a clean checkout. (NFR5)
 
-- [ ] **T2. URL normalization (`src/lib/url.ts`) + property tests**
+- [x] **T2. URL normalization (`src/lib/url.ts`) + property tests**
   - Implement `normalizeUrl`, `isHttpUrl`, and tracking-parameter stripping
     per design.md. Tracking parameters: any `utm_*`, `fbclid`, `gclid`,
     `msclkid`.

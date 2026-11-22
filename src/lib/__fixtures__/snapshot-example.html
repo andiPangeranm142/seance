@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dead Link Example</title>
+  <meta name="description" content="This is an example archived article for testing extraction.">
+  <style>
+    .hidden { display: none; }
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Example Article</h1>
+    <p class="byline">By John Doe | Published: 2026-01-15</p>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <p>This is the main article content. It contains multiple paragraphs to test Readability's extraction.</p>
+
+      <p>The first paragraph introduces the topic and sets the stage for the detailed information that follows. This is an important article about web archiving and link rot.</p>
+
+      <h2>Understanding Link Rot</h2>
+      <p>Link rot is the phenomenon where hyperlinks stop working because the content they point to has been moved, deleted, or changed. This is a significant problem for online publishing and digital preservation.</p>
+
+      <blockquote>
+        <p>"The web is not a permanent medium. Links break. Pages disappear. Content is moved or deleted. This is not a bug — it is a feature of how the web works."</p>
+        <footer>— Internet Archive Foundation</footer>
+      </blockquote>
+
+      <h3>Causes of Link Rot</h3>
+      <p>There are several common causes of link rot:</p>
+      <ul>
+        <li>Website redesigns that change URL structures</li>
+        <li>Content being removed without proper redirects</li>
+        <li>Domain expiration and loss of hosting</li>
+        <li>Company mergers and acquisitions</li>
+      </ul>
+
+      <h3>Preventing Link Rot</h3>
+      <p>Several strategies can help prevent link rot:</p>
+      <ol>
+        <li>Use of persistent identifiers like DOIs</li>
+        <li>Archiving through services like the Wayback Machine</li>
+        <li>Setting up proper redirect chains when content moves</li>
+        <li>Citing archived versions of pages</li>
+      </ol>
+
+      <h2>Images and Media</h2>
+      <p>Archived pages often contain images. Here is an example of an image that should be rewritten to its archived copy:</p>
+
+      <figure>
+        <img src="images/example.png" alt="Example image showing link rot">
+        <figcaption>An example image that should be rewritten to the archived version</figcaption>
+      </figure>
+
+      <p>Another image using relative path:</p>
+      <img src="/assets/graphics/figure1.jpg" alt="Figure 1 diagram" width="600" height="400">
+
+      <p>And an image with absolute URL:</p>
+      <img src="https://example.com/images/another.png" alt="Another image">
+
+      <h2>Code Examples</h2>
+      <pre><code>function checkLink(url) {
+  fetch(url)
+    .then(response => {
+      if (response.ok) {
+        console.log("Link is alive!");
+      } else {
+        console.log("Link is dead!");
+      }
+    })
+    .catch(error => {
+      console.error("Network error:", error);
+    });
+}</code></pre>
+
+      <h2>Interactive Elements (Should Be Removed)</h2>
+      <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <button type="submit">Submit</button>
+      </form>
+
+      <iframe src="https://example.com/embed" width="500" height="300"></iframe>
+
+      <div class="ad-banner">
+        <script>
+          console.log("This script should be removed");
+          document.write("广告");
+        </script>
+      </div>
+
+      <div class="tracking-beacon">
+        <img src="https://tracker.example.com/pixel.png" width="1" height="1" alt="">
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Example Company. All rights reserved.</p>
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Service</a>
+  </footer>
+
+  <script>
+    // This script should be completely removed
+    (function() {
+      console.log("Tracking user behavior");
+      sendAnalytics();
+    })();
+  </script>
+
+  <noscript>
+    <img src="https://no-script-tracker.example.com/pixel.gif" alt="">
+  </noscript>
+</body>
+</html>

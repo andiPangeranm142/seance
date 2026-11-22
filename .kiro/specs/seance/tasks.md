@@ -55,7 +55,7 @@ non-functional section.
     error kind; PBT covers CDX parsing (header-row skip, column tolerance,
     200 runs). (R1.3–R1.6, R2.3, R6.1)
 
-- [ ] **T6. Article extraction (`src/lib/extract.ts`) + tests**
+- [x] **T6. Article extraction (`src/lib/extract.ts`) + tests**
   - Implement `extractArticle`: DOMParser → Readability → rewrite image/link
     URLs to archived copies → sanitized `ContentBlock[]`. Drop scripts,
     styles, forms, iframes. Fall back to raw text when Readability finds

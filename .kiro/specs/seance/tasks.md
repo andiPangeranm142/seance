@@ -43,7 +43,7 @@ non-functional section.
 
 ## Wave 2 — Data layer (depends on Wave 1)
 
-- [ ] **T5. Wayback client (`src/lib/wayback.ts`) + tests**
+- [x] **T5. Wayback client (`src/lib/wayback.ts`) + tests**
   - Implement `WaybackClient` (`listSnapshots` via CDX through the proxy
     with monthly collapse over 200 rows, `closestSnapshot` via the
     Availability API direct, `fetchSnapshot` via the proxy with a 5 MB

@@ -184,25 +184,25 @@ describe("formatTimestamp", () => {
 
 describe("formatDisplay", () => {
   test("formats a timestamp for display", () => {
-    expect(formatDisplay("20261122030900")).toBe("22nd Nov 2026, 03:09 UTC");
+    expect(formatDisplay("20261122030900")).toBe("22 Nov 2026, 03:09 UTC");
   });
 
-  test("formats with day suffix", () => {
-    expect(formatDisplay("20261101030900")).toBe("1st Nov 2026, 03:09 UTC");
-    expect(formatDisplay("20261102030900")).toBe("2nd Nov 2026, 03:09 UTC");
-    expect(formatDisplay("20261103030900")).toBe("3rd Nov 2026, 03:09 UTC");
-    expect(formatDisplay("20261111030900")).toBe("11th Nov 2026, 03:09 UTC");
-    expect(formatDisplay("20261121030900")).toBe("21st Nov 2026, 03:09 UTC");
-    // Nov has 30 days, so use Dec 31 for "31st" suffix
-    expect(formatDisplay("20261231030900")).toBe("31st Dec 2026, 03:09 UTC");
+  test("formats without day suffix", () => {
+    expect(formatDisplay("20261101030900")).toBe("1 Nov 2026, 03:09 UTC");
+    expect(formatDisplay("20261102030900")).toBe("2 Nov 2026, 03:09 UTC");
+    expect(formatDisplay("20261103030900")).toBe("3 Nov 2026, 03:09 UTC");
+    expect(formatDisplay("20261111030900")).toBe("11 Nov 2026, 03:09 UTC");
+    expect(formatDisplay("20261121030900")).toBe("21 Nov 2026, 03:09 UTC");
+    // Nov has 30 days, so use Dec 31 for 31
+    expect(formatDisplay("20261231030900")).toBe("31 Dec 2026, 03:09 UTC");
   });
 
   test("formats with single-digit month and day", () => {
-    expect(formatDisplay("20260101000000")).toBe("1st Jan 2026, 00:00 UTC");
+    expect(formatDisplay("20260101000000")).toBe("1 Jan 2026, 00:00 UTC");
   });
 
   test("formats with single-digit hour and minute", () => {
-    expect(formatDisplay("20261122030900")).toBe("22nd Nov 2026, 03:09 UTC");
+    expect(formatDisplay("20261122030900")).toBe("22 Nov 2026, 03:09 UTC");
   });
 
   test("throws for invalid timestamp", () => {

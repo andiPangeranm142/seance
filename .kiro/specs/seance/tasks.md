@@ -34,7 +34,7 @@ non-functional section.
   - Acceptance: PBT covers parse/format round-trip, rejection of invalid
     strings, and chronological ordering (200 runs). (R2.1, R3.5)
 
-- [ ] **T4. Local storage (`src/lib/storage.ts`) + unit tests**
+- [x] **T4. Local storage (`src/lib/storage.ts`) + unit tests**
   - Implement Graveyard CRUD and API-key get/set, all guarded for
     unavailable localStorage. Cap the Graveyard at 50 entries (drop oldest).
   - Files: `src/lib/storage.ts`, `src/lib/storage.test.ts`.

@@ -106,13 +106,12 @@ export function formatDisplay(timestamp: string): string {
   const date = parseTimestamp(timestamp);
   
   const day = date.getUTCDate();
-  const daySuffix = getDaySuffix(day);
   const month = getMonthName(date.getUTCMonth());
   const year = date.getUTCFullYear();
   const hour = date.getUTCHours().toString().padStart(2, "0");
   const minute = date.getUTCMinutes().toString().padStart(2, "0");
 
-  return `${day}${daySuffix} ${month} ${year}, ${hour}:${minute} UTC`;
+  return `${day} ${month} ${year}, ${hour}:${minute} UTC`;
 }
 
 /**
@@ -136,28 +135,7 @@ function getDaysInMonth(year: number, month: number): number {
   return daysInMonth[month - 1];
 }
 
-/**
- * Get the ordinal suffix for a day number.
- * 
- * @param day - The day number (1-31)
- * @returns The suffix like "st", "nd", "rd", or "th"
- */
-function getDaySuffix(day: number): string {
-  if (day >= 11 && day <= 13) {
-    return "th";
-  }
-  
-  switch (day % 10) {
-    case 1:
-      return "st";
-    case 2:
-      return "nd";
-    case 3:
-      return "rd";
-    default:
-      return "th";
-  }
-}
+
 
 /**
  * Get the month name for a month index (0-11).
